@@ -48,6 +48,18 @@ public class TicketService {
 		
 		User user = userRepo.findById(userId).orElseThrow(()-> new UserNotFoundByIdException("Failed to create a bus data."));
 		
+		rideRepo.findById(rideId).orElseThrow()
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		ticket.setUser(user);
 		
 		ticketRepo.save(ticket);
